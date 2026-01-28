@@ -26,7 +26,15 @@ const Login = () => {
             localStorage.setItem('token', data.token)
             toast.success(data.message)
         } catch (error) {
-            toast(error?.response?.data?.message || error.message)
+            const message = error?.response?.data?.message || error.message
+            if (message === "Network Error") {
+                toast.error("Connecting to server... (this may take up to 1 minute to wake up)", {
+                    duration: 6000,
+                    icon: '⏳'
+                })
+            } else {
+                toast.error(message)
+            }
         }
     }
 
