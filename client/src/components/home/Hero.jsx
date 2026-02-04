@@ -62,7 +62,7 @@ const Hero = () => {
 
                     {/* Headline + CTA */}
                     <h1 className="text-5xl md:text-6xl font-semibold max-w-5xl text-center mt-16 md:leading-[70px]" style={{ color: '#5D524B' }}>
-                        Land your dream job with <span className="bg-gradient-to-r bg-clip-text text-transparent text-nowrap" style={{ backgroundImage: 'linear-gradient(to right, #8B7355, #A68A6E)' }}>AI-powered </span> resumes.
+                        Build a <span className="bg-gradient-to-r bg-clip-text text-transparent" style={{ backgroundImage: 'linear-gradient(to right, #8B7355, #A68A6E)' }}>Professional Resume </span> That Helps You Stand Out and Get Hired
                     </h1>
 
                     <p className="max-w-md text-center text-base my-7" style={{ color: '#5D524B' }}>Create, edit and download professional resumes with AI-powered assistance.</p>
@@ -74,6 +74,17 @@ const Hero = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right ml-1 size-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                         </Link>
 
+                    </div>
+                    {/* Resume Preview Image */}
+                    <div className="mt-12 w-full max-w-4xl px-4 md:px-0">
+                        <div className="relative group">
+                            <div className="absolute -inset-1 bg-gradient-to-r from-[#8B7355] to-[#A68A6E] rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+                            <img
+                                src="/resume-preview.png"
+                                alt="Resume Preview"
+                                className="relative rounded-xl shadow-2xl border border-white/20 w-full object-cover transition duration-500 group-hover:scale-[1.01]"
+                            />
+                        </div>
                     </div>
 
                     <p className="py-6 mt-14" style={{ color: '#8B7355' }}>Trusting by leading brands, including</p>
